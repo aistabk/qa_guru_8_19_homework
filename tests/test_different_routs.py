@@ -29,7 +29,7 @@ def test_post_method():
 
     assert "Missing password" in response.text
 
-
+"""тест может падать из-за медленного выполнения. в случае падения рекомендуется перезапустить"""
 def test_put_method():
     url = "https://reqres.in/api/users/2"
     payload = json.dumps({
