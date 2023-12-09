@@ -12,7 +12,7 @@ from tests.utils import load_schema
 
 def test_get_method():
     url = "https://reqres.in/api/users?delay=3"
-    schema = load_schema(os.path.abspath("schemas/delayed_response_schema.json"))
+    schema = load_schema(os.path.abspath("tests/schemas/delayed_response_schema.json"))
 
     result: Response = requests.get(url)
 

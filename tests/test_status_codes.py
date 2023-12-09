@@ -5,9 +5,8 @@ import requests
 from requests import Response
 
 
-
 def test_404_code():
-    url = f'https://reqres.in/api/unknown/80'
+    url = f'https://reqres.in/api/unknown/hvbhd'
 
     result: Response = requests.get(url)
 
@@ -47,7 +46,7 @@ def test_400_code():
 
     payload = json.dumps({
         "email": "any@mail.hh",
-            })
+    })
 
     result: Response = requests.post(url, data=payload)
     assert result.status_code == 400

@@ -11,7 +11,7 @@ from tests.utils import load_schema
 
 def test_single_schema():
     url = "https://reqres.in/api/unknown/2"
-    schema = load_schema(os.path.abspath("schemas/single_schema.json"))
+    schema = load_schema(os.path.abspath("tests/schemas/single_schema.json"))
 
     result: Response = requests.get(url)
 
@@ -21,7 +21,7 @@ def test_single_schema():
 
 def test_list_schema():
     url = "https://reqres.in/api/unknown"
-    schema = load_schema(os.path.abspath("schemas/list_schema.json"))
+    schema = load_schema(os.path.abspath("tests/schemas/list_schema.json"))
 
     result: Response = requests.get(url)
 

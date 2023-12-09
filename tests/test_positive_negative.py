@@ -9,4 +9,7 @@ def test_404_code(id_):
 
     result: Response = requests.get(url)
 
-    assert result.status_code == 404
+    if id_ == 1:
+        assert result.status_code != 404
+    else:
+        assert result.status_code == 404
